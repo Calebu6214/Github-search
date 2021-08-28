@@ -1,12 +1,17 @@
-<div class="container" *ngIf="profile">
+<div class="container" *ngIf="profile" id="whole">
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Enter your Username" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
     <div class="panel panel-default" id="panel">
         <div class="panel-heading" id="nav">
             {{profile.name}}
         </div>
 
         <div class="panel-body">
-            <div class="row">
-                <div class="col-sm-3">
+            <div class="row" id="row">
+                <div class="col-sm-3" id="img">
                     <img src="{{profile.avatar_url}}" alt="profile image">
                 </div>
             </div>
