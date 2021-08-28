@@ -1,1 +1,15 @@
-<p>profiles works!</p>
+<div class="container" *ngIf="profile">
+    <div class="panel panel-default" id="panel">
+        <div class="panel-heading" id="nav">
+            {{profile.name}}
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="{{profile.avatar_url}}" alt="profile image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
