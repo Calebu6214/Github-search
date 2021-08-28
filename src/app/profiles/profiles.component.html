@@ -12,7 +12,14 @@
         <div class="panel-body">
             <div class="row" id="row">
                 <div class="col-sm-3" id="img">
-                    <img src="{{profile.avatar_url}}" alt="profile image">
+                    <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="profile image">
+                </div>
+                <div class="class-sm-5">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                        <li class="list-group-item" *ngIf="profile.blog"><a>{{profile.blog}}</a></li>
+                        <li class="list-group-item" *ngIf="profile.emaill"><a>{{profile.email}}</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
