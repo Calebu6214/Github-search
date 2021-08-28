@@ -9,11 +9,17 @@ import { ProfilesService } from '../profiles.service';
 export class ProfilesComponent implements OnInit {
 
   profile!: any;
+  repos!: any;
 
   constructor(private profileService:ProfilesService) { 
     this.profileService.getProfileInfo().subscribe((profile: any)=>{
       console.log(profile);
       this.profile=profile;
+    });
+
+    this.profileService.getRepos().subscribe(repos=>{
+      console.log(repos);
+      this.repos=repos;
     });
   }
 

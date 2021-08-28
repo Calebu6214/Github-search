@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
   providedIn: 'root'
 })
 export class ProfilesService {
-  private username: string;
+  public username: string;
   private myApi='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';
 
   constructor(private http:HttpClient) {
@@ -17,5 +17,9 @@ export class ProfilesService {
      return this.http.get("https://api.github.com/users/" + this.username + "?myapi="+ this.myApi)
      .map((res:any)=>{return res})
      
+   }
+   getRepos(){
+    return this.http.get("https://api.github.com/users/" + this.username +  "/repos?myapi="+ this.myApi)
+    .map((res:any)=>{return res})
    }
 }

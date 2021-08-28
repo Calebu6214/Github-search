@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-sm-4">
                     <ul class="list-group">
-                        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                        <li class="list-group-item" *ngIf="profile.bio"> Bio:{{profile.bio}}</li>
                         <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}" target="_blank">{{profile.blog}}</a></li>
                         <li class="list-group-item" *ngIf="profile.emaill"><a href="email:{{profile.email}}" target="">{{profile.email}}</a></li>
                     </ul>
@@ -30,6 +30,16 @@
                             <span class="label label-success" id="span4">{{profile.public_gists}} Public Gists</span>
                         </p>
                         <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-warning btn-md">View Github Profile</a></p>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 >Repositories</h4>
+                            </div>
+                            <div class="panel-body" *ngFor="let repo of repos">
+                                <p>
+                                    {{repo.name}} <a href="repos.html_url" class="btn  btn-warning btn-md pull-right" target="_blank">View Project</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
