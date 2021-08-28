@@ -1,9 +1,14 @@
+<div class="container">
+    <h5>Github profile search app</h5>
+    
+ <form action="" class="search-form">
+    <div class="form-group">
+    <input  class="form-control" type="text" placeholder="Enter your Github Username"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
+    </div>
+    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+</form>
+</div>
 <div class="container" *ngIf="profile" id="whole">
-    <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Enter your Username" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-
     <div class="panel panel-default" id="panel">
         <div class="panel-heading" id="nav">
             {{profile.name}}
@@ -24,9 +29,9 @@
                 <div class="col-sm-4">
                     <div>
                         <p id="repos">
-                            <span class="label label-default" id="span1">{{profile.followers}} Followers</span>
-                            <span class="label label-primary" id="span2">Following {{profile.following}}</span>
-                            <span class="label label-secondary" id="span3">{{profile.public_repos}} Repositories</span>
+                            <span class="label label-default" id="span1">  {{profile.followers}} Followers</span>
+                            <span class="label label-primary" id="span2">  Following {{profile.following}}</span>
+                            <span class="label label-secondary" id="span3"> <a href="{{profile.html_url}}" target="_blank"> {{profile.public_repos}} Repositories </a></span>
                             <span class="label label-success" id="span4">{{profile.public_gists}} Public Gists</span>
                         </p>
                         <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-warning btn-md">View Github Profile</a></p>

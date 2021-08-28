@@ -10,8 +10,14 @@ export class ProfilesComponent implements OnInit {
 
   profile!: any;
   repos!: any;
+  username!: string;
 
   constructor(private profileService:ProfilesService) { 
+ 
+  }
+
+  findProfile(){
+    this.profileService.updateProfile(this.username);
     this.profileService.getProfileInfo().subscribe((profile: any)=>{
       console.log(profile);
       this.profile=profile;
