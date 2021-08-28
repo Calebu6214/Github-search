@@ -35,8 +35,8 @@
                                 <h4 >Repositories</h4>
                             </div>
                             <div class="panel-body" *ngFor="let repo of repos">
-                                <p class="clearfix">
-                                   <a href="repo.html_url"  target="_blank">{{repo.name}}</a>
+                                <p>
+                                   <a href="{{repo.html_url}}"  target="_blank">{{repo.name}}</a>
                                 </p>
                             </div>
                         </div>
