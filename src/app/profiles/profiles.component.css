@@ -1,3 +1,4 @@
+
 #nav{
     background-color: goldenrod;
 }
@@ -9,4 +10,20 @@
 }
 form{
     margin-bottom: 1%;
+}
+#repos>span{
+    margin: 5px;
+    border-radius: 4px;
+}
+#span1{
+    background-color: hotpink;
+}
+#span2{
+    background-color: red;
+}
+#span3{
+    background-color:lightblue;
+}
+#span4{
+    background-color: green;
 }

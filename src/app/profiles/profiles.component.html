@@ -11,15 +11,25 @@
 
         <div class="panel-body">
             <div class="row" id="row">
-                <div class="col-sm-3" id="img">
+                <div class="col-sm-4" id="img">
                     <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="profile image">
                 </div>
-                <div class="class-sm-5">
+                <div class="col-sm-4">
                     <ul class="list-group">
                         <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-                        <li class="list-group-item" *ngIf="profile.blog"><a>{{profile.blog}}</a></li>
-                        <li class="list-group-item" *ngIf="profile.emaill"><a>{{profile.email}}</a></li>
+                        <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}" target="_blank">{{profile.blog}}</a></li>
+                        <li class="list-group-item" *ngIf="profile.emaill"><a href="email:{{profile.email}}" target="">{{profile.email}}</a></li>
                     </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <p id="repos">
+                            <span class="label label-default" id="span1">{{profile.followers}} Followers</span>
+                            <span class="label label-primary" id="span2">Following {{profile.following}}</span>
+                            <span class="label label-secondary" id="span3">{{profile.public_repos}} Repositories</span>
+                            <span class="label label-success" id="span4">{{profile.public_gists}} Public Gists</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
