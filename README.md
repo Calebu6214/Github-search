@@ -44,7 +44,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 .Open the deployment link. <br>
 .On the website search form enter you github username and your profile information is shown below the search bar. <br>
 
-.Website link 
+.Website link https://calebu6214.github.io/Github-search
 
 ## Known Bugs
  .No Bugs
