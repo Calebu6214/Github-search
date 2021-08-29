@@ -1,5 +1,34 @@
 # GithubSearch
 
+
+## By CALEB KIMUTAI
+       
+## Description
+.
+
+## Setup/Installation Requirements
+.git fork/clone repository <br>
+. git clone  <br>
+.Open the folder with vscode.<br>
+.Run locally on live server using Angular CLI.<br>
+.Host in github.
+
+## BDD
+.
+
+.Website link 
+
+## Known Bugs
+ .No Bugs
+
+## Technologies Used
+1. HTML
+2. Angular CLI
+3. CSS & Bootstrap
+4. Typescript
+5. JavaScript
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ## Development server
@@ -25,3 +54,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Contact And Support
+For any questions and contribution get me through;
+Email; calebkimutai97@gmail.com
+Tel; +254707160385
+
+### License
+Copyright (c) 2021 **CALEB KIPNGETICH**
