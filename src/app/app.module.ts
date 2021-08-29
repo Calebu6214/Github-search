@@ -7,17 +7,21 @@ import { ProfilesService } from './profiles.service';
 import { ProfilesComponent } from './profiles/profiles.component';
 // import { Profile } from './repo';
 import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfilesComponent
+    ProfilesComponent,
+    NotFoundComponent
     
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [ProfilesService],
   bootstrap: [AppComponent]

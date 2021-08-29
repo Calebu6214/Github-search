@@ -5,7 +5,9 @@
 export const environment = {
   
   production: false,
-  myApi:"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"
+  myApi:"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",
+  clientid:'e627f3b9460009b4d57b',
+  clientsecret:'f5aa24c242ddd52c5a020c5c98cdb75fceadc7ce'
 };
 
 /*
