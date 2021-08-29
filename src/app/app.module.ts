@@ -5,7 +5,7 @@ import{HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ProfilesService } from './profiles.service';
 import { ProfilesComponent } from './profiles/profiles.component';
-import { Profile } from './repo';
+// import { Profile } from './repo';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({

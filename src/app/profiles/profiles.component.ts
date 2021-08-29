@@ -11,9 +11,18 @@ export class ProfilesComponent implements OnInit {
   profile!: any;
   repos!: any;
   username!: string;
+  
 
   constructor(private profileService:ProfilesService) { 
- 
+    this.profileService.getProfileInfo().subscribe((profile: any)=>{
+      console.log(profile);
+      this.profile=profile;
+    });
+
+    this.profileService.getRepos().subscribe(repos=>{
+      console.log(repos);
+      this.repos=repos;
+    });
   }
 
   findProfile(){
@@ -29,7 +38,7 @@ export class ProfilesComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

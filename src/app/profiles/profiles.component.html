@@ -1,11 +1,11 @@
 <div class="container">
     <h5>Github profile search app</h5>
     
- <form action="" class="search-form">
+ <form action="" class="search-form" (ngSubmit)="findProfile()">
     <div class="form-group">
-    <input  class="form-control" type="text" placeholder="Enter your Github Username"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
+    <input  class="form-control" type="text" placeholder="Enter your Github Username"  [(ngModel)]="username" name="username" >
     </div>
-    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+    <button class="btn btn-outline-success" type="submit">Search</button>
 </form>
 </div>
 <div class="container" *ngIf="profile" id="whole">
@@ -24,6 +24,7 @@
                         <li class="list-group-item" *ngIf="profile.bio"> Bio:{{profile.bio}}</li>
                         <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}" target="_blank">{{profile.blog}}</a></li>
                         <li class="list-group-item" *ngIf="profile.emaill"><a href="email:{{profile.email}}" target="">{{profile.email}}</a></li>
+                        <li class="list-group-item" > Created Acc on:{{profile.created_at|date}}</li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
