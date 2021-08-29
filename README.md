@@ -8,7 +8,7 @@
 
 ## Setup/Installation Requirements
 .git fork/clone repository <br>
-. git clone  <br>
+. git clone https://github.com/Calebu6214/Github-search.git <br>
 .Open the folder with vscode.<br>
 .Run locally on live server using Angular CLI.<br>
 .Host in github.
