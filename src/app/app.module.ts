@@ -9,12 +9,14 @@ import { ProfilesComponent } from './profiles/profiles.component';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfilesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavbarComponent
     
   ],
   imports: [
