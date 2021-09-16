@@ -10,7 +10,7 @@ import { ProfilesService } from '../profiles.service';
 export class ProfilesComponent implements OnInit {
  
   goToUrl(){
-    this.profile.navigate(['/profiles'])
+    this.profile.navigate(['/'])
   }
 
   profile!: any;
@@ -44,6 +44,7 @@ export class ProfilesComponent implements OnInit {
   }
 
   ngOnInit() {
+    
   }
 
 }

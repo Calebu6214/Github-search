@@ -4,9 +4,12 @@ import { ProfilesComponent } from './profiles/profiles.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
-  {path: ' ', redirectTo:"/profiles", pathMatch:"full"},
-  // {path:'',component:ProfilesComponent}
+  
+  {path:'profiles',component:ProfilesComponent},
+  {path: '', redirectTo:"/profiles", pathMatch:"full"},
   { path: '**',component: NotFoundComponent }
+  
+
  
 ];
 
