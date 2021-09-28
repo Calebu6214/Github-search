@@ -5,18 +5,21 @@ import{HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ProfilesService } from './profiles.service';
 import { ProfilesComponent } from './profiles/profiles.component';
-// import { Profile } from './repo';
+import { Profile } from './repo';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DateCountPipe } from './date-count.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfilesComponent,
     NotFoundComponent,
-    NavbarComponent
+    NavbarComponent,
+    DateCountPipe
     
   ],
   imports: [
